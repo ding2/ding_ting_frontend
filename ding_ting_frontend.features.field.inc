@@ -10,7 +10,7 @@
 function ding_ting_frontend_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'ting_collection-ting_collection-ting_collection_types'
+  // Exported field: 'ting_collection-ting_collection-ting_collection_types'.
   $fields['ting_collection-ting_collection-ting_collection_types'] = array(
     'field_config' => array(
       'active' => '1',
@@ -20,6 +20,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_collection_types',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -45,11 +46,13 @@ function ding_ting_frontend_field_default_fields() {
           'weight' => '1',
         ),
         'teaser' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'module' => 'ding_availability',
-          'settings' => array(),
+          'settings' => array(
+            'link' => 1,
+          ),
           'type' => 'ding_availability_types',
-          'weight' => '0',
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'ting_collection',
@@ -68,7 +71,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_collection-ting_collection-ting_entities'
+  // Exported field: 'ting_collection-ting_collection-ting_entities'.
   $fields['ting_collection-ting_collection-ting_entities'] = array(
     'field_config' => array(
       'active' => '1',
@@ -78,6 +81,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_entities',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -130,7 +134,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_collection-ting_collection-ting_primary_object'
+  // Exported field: 'ting_collection-ting_collection-ting_primary_object'.
   $fields['ting_collection-ting_collection-ting_primary_object'] = array(
     'field_config' => array(
       'active' => '1',
@@ -140,6 +144,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_primary_object',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -168,10 +173,10 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'hidden',
           'module' => 'ting',
           'settings' => array(
-            'view_mode' => 'teaser',
+            'view_mode' => 'search_result',
           ),
           'type' => 'ting_primary_object_default',
-          'weight' => '1',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'ting_collection',
@@ -190,7 +195,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ding_availability_holdings'
+  // Exported field: 'ting_object-ting_object-ding_availability_holdings'.
   $fields['ting_object-ting_object-ding_availability_holdings'] = array(
     'field_config' => array(
       'active' => '1',
@@ -200,6 +205,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ding_availability_holdings',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ding_availability',
       'settings' => array(),
       'storage' => array(
@@ -237,6 +243,12 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ding_availability_default',
           'weight' => '11',
         ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -266,7 +278,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ding_entity_buttons'
+  // Exported field: 'ting_object-ting_object-ding_entity_buttons'.
   $fields['ting_object-ting_object-ding_entity_buttons'] = array(
     'field_config' => array(
       'active' => '1',
@@ -276,6 +288,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ding_entity_buttons',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ding_entity',
       'settings' => array(),
       'storage' => array(
@@ -314,6 +327,12 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ding_entity_buttons_default',
           'weight' => '6',
         ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '10',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -343,7 +362,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ding_periodical_issues'
+  // Exported field: 'ting_object-ting_object-ding_periodical_issues'.
   $fields['ting_object-ting_object-ding_periodical_issues'] = array(
     'field_config' => array(
       'active' => '1',
@@ -353,6 +372,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ding_periodical_issues',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ding_periodical',
       'settings' => array(),
       'storage' => array(
@@ -390,6 +410,12 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ding_periodical_issues_default',
           'weight' => '9',
         ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -420,7 +446,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_abstract'
+  // Exported field: 'ting_object-ting_object-ting_abstract'.
   $fields['ting_object-ting_object-ting_abstract'] = array(
     'field_config' => array(
       'active' => '1',
@@ -430,6 +456,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_abstract',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -469,6 +496,13 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_abstract_default',
           'weight' => '4',
         ),
+        'search_result' => array(
+          'label' => 'hidden',
+          'module' => 'ting',
+          'settings' => array(),
+          'type' => 'ting_abstract_default',
+          'weight' => '3',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'ting',
@@ -499,7 +533,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_author'
+  // Exported field: 'ting_object-ting_object-ting_author'.
   $fields['ting_object-ting_object-ting_author'] = array(
     'field_config' => array(
       'active' => '1',
@@ -509,6 +543,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_author',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -548,6 +583,13 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_author_default',
           'weight' => '3',
         ),
+        'search_result' => array(
+          'label' => 'hidden',
+          'module' => 'ting',
+          'settings' => array(),
+          'type' => 'ting_author_default',
+          'weight' => '2',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'ting',
@@ -579,7 +621,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_cover'
+  // Exported field: 'ting_object-ting_object-ting_cover'.
   $fields['ting_object-ting_object-ting_cover'] = array(
     'field_config' => array(
       'active' => '1',
@@ -589,6 +631,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_cover',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'ting_covers',
       'settings' => array(),
       'translatable' => '0',
@@ -627,6 +670,15 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_cover_default',
           'weight' => '0',
         ),
+        'search_result' => array(
+          'label' => 'hidden',
+          'module' => 'ting_covers',
+          'settings' => array(
+            'image_style' => 'ding_medium',
+          ),
+          'type' => 'ting_cover_default',
+          'weight' => '1',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'ting_covers',
@@ -662,7 +714,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_reference_reverse'
+  // Exported field: 'ting_object-ting_object-ting_reference_reverse'.
   $fields['ting_object-ting_object-ting_reference_reverse'] = array(
     'field_config' => array(
       'active' => '1',
@@ -672,6 +724,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_reference_reverse',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting_reference',
       'settings' => array(),
       'storage' => array(
@@ -709,6 +762,12 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_reference_reverse_default',
           'weight' => '8',
         ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '7',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -739,7 +798,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_relations'
+  // Exported field: 'ting_object-ting_object-ting_relations'.
   $fields['ting_object-ting_object-ting_relations'] = array(
     'field_config' => array(
       'active' => '1',
@@ -749,6 +808,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_relations',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting_relation',
       'settings' => array(),
       'storage' => array(
@@ -786,6 +846,12 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_relations_default',
           'weight' => '12',
         ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '9',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -815,7 +881,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_series'
+  // Exported field: 'ting_object-ting_object-ting_series'.
   $fields['ting_object-ting_object-ting_series'] = array(
     'field_config' => array(
       'active' => '1',
@@ -825,6 +891,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_series',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -862,6 +929,13 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_series_default',
           'weight' => '10',
         ),
+        'search_result' => array(
+          'label' => 'hidden',
+          'module' => 'ting',
+          'settings' => array(),
+          'type' => 'ting_series_default',
+          'weight' => '4',
+        ),
         'teaser' => array(
           'label' => 'inline',
           'module' => 'ting',
@@ -893,7 +967,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_subjects'
+  // Exported field: 'ting_object-ting_object-ting_subjects'.
   $fields['ting_object-ting_object-ting_subjects'] = array(
     'field_config' => array(
       'active' => '1',
@@ -903,6 +977,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_subjects',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -942,6 +1017,13 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_subjects_default',
           'weight' => '5',
         ),
+        'search_result' => array(
+          'label' => 'inline',
+          'module' => 'ting',
+          'settings' => array(),
+          'type' => 'ting_subjects_default',
+          'weight' => '5',
+        ),
         'teaser' => array(
           'label' => 'inline',
           'module' => 'ting',
@@ -973,7 +1055,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_title'
+  // Exported field: 'ting_object-ting_object-ting_title'.
   $fields['ting_object-ting_object-ting_title'] = array(
     'field_config' => array(
       'active' => '1',
@@ -983,6 +1065,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_title',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -1028,6 +1111,15 @@ function ding_ting_frontend_field_default_fields() {
           'type' => 'ting_title_default',
           'weight' => '2',
         ),
+        'search_result' => array(
+          'label' => 'hidden',
+          'module' => 'ting',
+          'settings' => array(
+            'link_type' => 'collection',
+          ),
+          'type' => 'ting_title_default',
+          'weight' => '0',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'ting',
@@ -1063,7 +1155,7 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
-  // Exported field: 'ting_object-ting_object-ting_type'
+  // Exported field: 'ting_object-ting_object-ting_type'.
   $fields['ting_object-ting_object-ting_type'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1073,6 +1165,7 @@ function ding_ting_frontend_field_default_fields() {
       'field_name' => 'ting_type',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '1',
       'module' => 'ting',
       'settings' => array(),
       'storage' => array(
@@ -1111,6 +1204,12 @@ function ding_ting_frontend_field_default_fields() {
           'settings' => array(),
           'type' => 'ding_availability_type',
           'weight' => '1',
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
